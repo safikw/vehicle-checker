@@ -18,7 +18,7 @@ from commons import format_class_name
 app = Flask(__name__)
 
 @app.route('/vehicle-checker', methods=['GET'])
-def upload_file():
+def vehicle-checker():
     return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
