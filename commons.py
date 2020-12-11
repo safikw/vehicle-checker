@@ -2,6 +2,7 @@ import io
 
 
 from PIL import Image
+import torch as pt
 from torchvision import models
 import torchvision.transforms as transforms
 
