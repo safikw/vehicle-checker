@@ -1,4 +1,4 @@
-const baseUrl = 'https://vehicle-checker.herokuapp.com/';
+const baseUrl = 'https://vehicle-checker.herokuapp.com/vehicle-checker';
 const inputFile = document.querySelector('input[type="file"]');
 const img = document.getElementById('img-preview');
 const button = document.querySelector("button");
@@ -42,7 +42,7 @@ function predictImage(data){
         loadingIndicator.classList.add('d-none');
         button.classList.remove('d-none');
         result.classList.remove('d-none');
-        result.textContent = `Hmm.. Menurut saya itu masker ${response.class_name}`
+        result.textContent = `Hmm.. Menurut saya itu  ${response.class_name}`
     })
     .catch(error => {
         loadingIndicator.classList.add('d-none');
