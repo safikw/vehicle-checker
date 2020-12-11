@@ -8,7 +8,7 @@ import torchvision.transforms as transforms
 
 
 def get_model():
-     model = pt.load("modelkita_v4.pth", map_location="cpu")
+    model = pt.load("modelkita_v4.pth", map_location="cpu")
     model.eval()
     return model
 
